@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int a, b, result, i;
+	size_t a, b, sum, i;
 
 	a = 1;
 	b = 2;
@@ -14,13 +14,13 @@ int main(void)
 	{
 		if (i != 50)
 		{
-			printf("%d, ", a);
-			result = a + b;
+			printf("%ld, ", a);
+			sum = a + b;
 			a = b;
-			b = result;
+			b = sum;
 		}
 		else
-			printf("%d", a);
+			printf("%ld", a);
 	}
 	printf("\n");
 	return (0);

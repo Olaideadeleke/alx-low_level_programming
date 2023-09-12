@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-/**print_alphabet_x10 - Prints lowercase letters 10x
+/**
+ *print_alphabet_x10 - Prints lowercase letters 10x
  *
  *Return: Always 0 (Success)
  */

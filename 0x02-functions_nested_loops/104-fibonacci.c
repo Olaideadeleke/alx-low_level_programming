@@ -14,21 +14,21 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	printf("%u, %u, ", a, b);
 
-	for (i = 3; i <= 98; i++)
+
+	for (i = 1; i <= 98; i++)
 	{
-		result = a + b;
-		a = b;
-		b = result;
-
 		if (i != 98)
 		{
-			printf("%u, ", result);
+			printf("%u, ", a);
+			result = a + b;
+			a = b;
+			b = result;
 		}
 		else
 		{
-			printf("%u\n", result);
+			printf("%u\n", a);
 		}
 	}
+	return (0);
 }

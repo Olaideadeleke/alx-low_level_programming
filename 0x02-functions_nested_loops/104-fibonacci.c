@@ -1,9 +1,13 @@
 #include <stdio.h>
-
+/**
+ *main - Entry point
+ *
+ *Return: result
+ */
 
 int main(void)
 {
-	long long a, b, i, result;
+	long long int a, b, i, result;
 
 	a = 1;
 	b = 2;

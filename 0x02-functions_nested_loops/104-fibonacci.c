@@ -7,23 +7,28 @@
 
 int main(void)
 {
-	size_t a, b, i, result;
+	unsigned int a;
+	unsigned int b;
+	unsigned int i;
+	unsigned int result;
 
 	a = 1;
 	b = 2;
-	for (i = 1; i <= 98; i++)
+	printf("%u, %u, ", a, b);
+
+	for (i = 3; i <= 98; i++)
 	{
+		result = a + b;
+		a = b;
+		b = result;
+
 		if (i != 98)
 		{
-			printf("%ld, ", a);
-			result = a + b;
-			a = b;
-			b = result;
+			printf("%u, ", result);
 		}
 		else
 		{
-			printf("%ld", a);
+			printf("%u\n", result);
 		}
 	}
-	printf("\n");
 }

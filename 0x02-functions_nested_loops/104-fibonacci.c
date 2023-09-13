@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long long int a, b, i, result;
+	size_t a, b, i, result;
 
 	a = 1;
 	b = 2;
@@ -15,14 +15,14 @@ int main(void)
 	{
 		if (i != 98)
 		{
-			printf("%lld, ", a);
+			printf("%ld, ", a);
 			result = a + b;
 			a = b;
 			b = result;
 		}
 		else
 		{
-			printf("%lld", a);
+			printf("%ld", a);
 		}
 	}
 	printf("\n");

@@ -2,7 +2,8 @@
 #include <ctype.h>
 #include "main.h"
 /**
- *int _isupper - Print letters in uppercase
+ *_isupper - Print letters in uppercase
+ *@c: integer character
  *Return: 1 and 0
  */
 int _isupper(int c)

@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strlen - Count the charaters in a string
+ * _strlen - Count the charaters in a string
  *@s: string name
- *Returns: an int
+ *Return: strlen
  */
 int _strlen(char *s)
 {

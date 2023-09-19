@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+/**
+ *rev_string - Reverse string
+ *@s: String to a pointer
+ *Return: Nothing
+ */
+void rev_string(char *s)
+{
+	int i, len, c;
+
+	len = (strlen(s) - 1);
+	i = 0;
+	while (i < len)
+	{
+		c = s[i];
+		s[i] = s[len];
+		s[len] = c;
+		i++;
+		len--;
+	}
+}

@@ -9,21 +9,25 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i, num;
+	int i, q, rem;
 
 	for (i = n - 1; i >= 0; i--)
 	{
 		if (a[i] <= 9)
 		{
-			_putchar(a[i]);
+			putchar(a[i] + '0');
 		}
-		while (a[i] > 9)
+		else
 		{
-			num = (a[i]) % 10;
-			_putchar('0' + num);
-			(a[i]) /= 10;
+			q = a[i];
+			while ( q != 0)
+			{
+				rem = q % 10;
+				q = q / 10;
+				putchar(rem + '0');
+			}
 		}
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }

@@ -13,7 +13,11 @@ void reverse_array(int *a, int n)
 
 	for (i = n - 1; i >= 0; i--)
 	{
-		while (a[i] > 0)
+		if (a[i] <= 9)
+		{
+			_putchar(a[i]);
+		}
+		while (a[i] > 9)
 		{
 			num = (a[i]) % 10;
 			_putchar('0' + num);

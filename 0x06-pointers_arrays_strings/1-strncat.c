@@ -6,6 +6,7 @@
  *@dest: Where to copy the concetenated string
  *@src: the conctenated string
  *@n: number of bytes
+ *Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {

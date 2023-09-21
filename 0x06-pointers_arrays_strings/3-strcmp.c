@@ -9,22 +9,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 != '\0' && *s1 == *s2)
-	{
-		s1++;
-		s2++;
-	}
+	int res = strcmp(s1, s2);
 
-	if (s1 < s2)
+	if (res == 0)
 	{
-		return (-1);
+		return (0);
 	}
-	else if (s1 > s2)
+	else if (res > 0)
 	{
-		return (1);
+		return (res);
 	}
 	else
 	{
-		return (0);
+		return (res);
 	}
 }

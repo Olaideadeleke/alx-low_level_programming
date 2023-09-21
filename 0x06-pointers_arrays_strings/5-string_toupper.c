@@ -3,6 +3,7 @@
 #include <string.h>
 /**
  *string_toupper - Convert string to uppercase
+ *@s: pointer to a string of characters
  *Return: Pointer to string of charater
  */
 char *string_toupper(char *s)
